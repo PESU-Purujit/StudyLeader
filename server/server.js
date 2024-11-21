@@ -1,23 +1,30 @@
+require('dotenv').config();
 const express = require('express');
-const mongoose = require('mongoose');
-const authRoutes = require('./routes/auth');
-const studySessionRoutes = require('./routes/studySession');
-const friendsRoutes = require('./routes/friends');
-const leaderboardRoutes = require('./routes/leaderboard');
+const cors = require('cors');
+const connectDB = require('./config/database');
+
 const app = express();
 
+// Middleware
+app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-.then(() => console.log('MongoDB connected'))
-.catch(err => console.log(err));
+// Connect to Database
+connectDB();
 
-// Define routes
+// Routes
+const authRoutes = require('./routes/authRoutes');
+const userRoutes = require('./routes/userRoutes');
+const studySessionRoutes = require('./routes/studySessionRoutes');
+const friendRoutes = require('./routes/friendRoutes');
+
 app.use('/api/auth', authRoutes);
-app.use('/api/study-session', studySessionRoutes);
-app.use('/api/friends', friendsRoutes);
-app.use('/api/leaderboard', leaderboardRoutes);
+app.use('/api/user', userRoutes);
+app.use('/api/study-sessions', studySessionRoutes);
+app.use('/api/friends', friendRoutes);
 
+// Start the server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
