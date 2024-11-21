@@ -1,0 +1,57 @@
+.leaderboard-container {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.leaderboard-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.leaderboard-tabs button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.leaderboard-tabs button.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.leaderboard-item:last-child {
+    border-bottom: none;
+}
+
+.leaderboard-item .rank {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.leaderboard-item .username {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.leaderboard-item .study-time {
+    color: var(--primary-color);
+}

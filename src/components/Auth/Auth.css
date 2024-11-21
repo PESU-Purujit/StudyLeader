@@ -1,0 +1,64 @@
+.login-container, .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-card, .signup-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-card h2, .signup-card h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-button, .signup-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.signup-link, .login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-link a, .login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
