@@ -1,0 +1,243 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* Study Session Styles */
+.study-session-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.study-session-content {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timer {
+    margin: 20px 0;
+}
+
+.elapsed-time {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.session-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pause-session-btn,
+.stop-session-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.pause-session-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.pause-session-btn:hover {
+    background-color: #e0a800;
+}
+
+.stop-session-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.stop-session-btn:hover {
+    background-color: #c82333;
+}
+/* Form styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.signup-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.signup-button:hover {
+    background-color: #218838;
+}
+
+.login-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Study Session Styles */
+.study-session {
+    text-align: center;
+}
+
+.timer {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Leaderboard Styles */
+.leaderboard-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.leaderboard-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Friends Styles */
+.friends-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.friends-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Additional Styling */
+.login-redirect {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-link:hover {
+    text-decoration: none;
+}
+/* Study Session Styles */
+.study-session-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.study-session-content {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timer {
+    margin: 20px 0;
+}
+
+.elapsed-time {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.session-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pause-session-btn,
+.stop-session-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.pause-session-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.pause-session-btn:hover {
+    background-color: #e0a800;
+}
+
+.stop-session-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.stop-session-btn:hover {
+    background-color: #c82333;
+}
